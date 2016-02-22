@@ -1,0 +1,304 @@
+body {
+	font-family: 'Muli', sans-serif;
+}
+
+
+/* Header */
+header {
+	height: 450px;
+	background: url(images/8H.jpg);
+	font-family: 'Oxygen', sans-serif;
+	background-size: cover;
+}
+
+.logo {
+	height: 55px;
+	width:	55px;
+	margin: 15px 0 0 25px;
+	float: left;
+}
+.right {
+	float: right;
+	margin: 30px 30px 95px 0;
+}
+
+nav a {
+	display: inline-block;
+	margin-left: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color:	lightsteelblue;
+}
+
+#nombre {
+	font-family: 'Muli', sans-serif;
+	font-size: 72px;
+	font-weight: 700px;
+	color: white;
+	text-align: center;
+	letter-spacing: 15px;
+	clear: both;
+}
+
+.name {
+	display: inline-block;
+	padding: 10px 5px;
+	border: white solid 10px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	letter-spacing: 8px;
+}
+
+
+/* About */
+h2 {
+	text-align: center;
+	color: goldenrod;
+	font-weight: bold;
+	padding: 100px 0 30px;
+}
+
+.about-me {
+	max-width: 620px;
+	padding: 0 15px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.my-face {
+	display: block;
+    width: 145px;
+    height: 175px;
+    overflow: hidden;
+/*    padding: 5px 4px;*/
+	border-radius: 50%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 650px) {
+	.about-section {
+		display: block;
+		text-align: center;
+	}
+
+	div {
+		display: inline-block;
+	}
+
+	.face-pic {
+		display: block;
+		background-position: center center;
+		width: auto;
+		margin-bottom: 30px;
+		background-repeat: no-repeat;
+	}
+}
+
+
+/* Skills */
+.skill-section {
+	max-width: 700px;
+	margin: 80px auto;
+	color: #333333;
+	overflow: auto;
+}
+
+.skill-set1, .skill-set2 {
+	width: 350px;
+	float: left;
+	text-align: center;
+
+}
+
+.my_skills {
+	margin-bottom: 5px;
+}
+
+progress {
+	width: 40%;
+	margin-bottom: 5px;
+}
+
+.styled progress {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 40%;
+  height: 9px;
+
+  /* Firefox */
+  border: none;
+  background: #EEE;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+}
+
+.styled progress::-webkit-progress-bar {
+  background: #EEE;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+  border-radius: 3px;
+}
+
+.styled progress::-webkit-progress-value {
+  background-color: #d6c28f;
+  border-radius: 3px;
+}
+
+.styled progress::-moz-progress-bar {
+  background-color: #d6c28f;
+  border-radius: 3px;
+}
+
+/* Projects */
+.projects {
+	background: #e9e9e9;
+	padding-bottom: 100px;
+}
+
+.project-space {
+	max-width: 960px;
+	margin: 0px auto;
+	padding-bottom: 50px;
+	overflow: auto;
+/*	background: orange;*/
+}
+
+.wrapper {
+  background-image: url('http://unsplash.s3.amazonaws.com/IMG_5776.jpg');
+  height: 20em;
+  width: 20em;
+  margin: 0 auto;
+  float: left;
+  background-position: 23.05% 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: background-size .3s ease-in-out;
+  overflow: hidden;
+}
+
+.wrapper img {
+	    height: 18%;
+    width: 50%;
+    margin-top: 14%;
+    margin-left: 4%;
+    margin-bottom: 8%;
+}
+
+.wrapper:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+/*  background-color: rgba(214, 194, 143, 0.5);*/
+  opacity: .5;
+  -webkit-transition: opacity .3s ease-in-out;
+}
+
+.wrapper:hover {
+  background-size: 160%;
+}
+
+.wrapper:hover:after {
+  opacity: 1;
+}
+
+.wrapper:hover span,
+.wrapper:hover hr {
+  -webkit-transform: translateX(0);
+}
+
+.inner {
+  color: white;
+  font-family: 'Muli', sans-serif
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+span {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-transition: all .3s ease-in-out;
+  position: relative;
+}
+
+span:first-child {
+  font-size: 22px;
+  padding-top: 50%;
+  -webkit-transform: translateX(150%);
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid white;
+  width: 2em;
+  margin: 5px auto 0 auto;
+}
+
+span:last-child {
+  -webkit-transform: translateX(-150%);
+}
+
+/* Contact */
+
+.contact {
+	text-align: center;
+	color: black;
+	text-decoration: none;
+}
+
+.links {
+	color: black;
+}
+
+/* Footer */
+footer {
+	background: url(images/8H.jpg);
+	background-size: cover;
+	height: 70px;
+}
+
+.my_footer {
+	padding: 10px 30px;
+	color: white;
+	margin-left: 15px;
+}
+
+div a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.footer-content {
+	float: left;
+	text-transform: uppercase;
+}
+
+.copyright {
+	margin:  0;
+	font-size: 20px;
+	opacity: 0.5;
+}
