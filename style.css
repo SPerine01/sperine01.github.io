@@ -177,8 +177,8 @@ progress {
 }
 
 .wrapper {
-  background-image: url('http://unsplash.s3.amazonaws.com/IMG_5776.jpg');
-  height: 20em;
+/*  background-image: url('http://unsplash.s3.amazonaws.com/IMG_5776.jpg');
+*/  height: 20em;
   width: 20em;
   margin: 0 auto;
   float: left;
@@ -187,20 +187,20 @@ progress {
   margin-right: auto;
   background-size: 140%;
   background-repeat: no-repeat;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   position: relative;
   -webkit-transition: background-size .3s ease-in-out;
   overflow: hidden;
 }
 
-.wrapper img {
-	    height: 18%;
+/*.wrapper img {
+	height: 18%;
     width: 50%;
     margin-top: 14%;
     margin-left: 4%;
     margin-bottom: 8%;
-}
+}*/
 
 .wrapper:after {
   content: '';
@@ -260,6 +260,27 @@ hr {
 span:last-child {
   -webkit-transform: translateX(-150%);
 }
+
+#vision {
+	background-image: url(images/vision-board.png)
+}
+
+#bound {
+	background-image: url(images/bound.png)
+}
+
+#chronicle {
+	background-image: url(images/chronicle.png)
+}
+
+#five_oclock {
+	background-image: url(images/5oclock.png);
+
+}
+
+.spanny {
+		color: black;
+	}
 
 /* Contact */
 
